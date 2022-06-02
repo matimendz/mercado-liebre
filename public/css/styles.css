@@ -1,0 +1,424 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}*/
+
+
+
+header {
+    background-color: #EAC926;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo {
+    width: 48%;
+    max-width: 200px;
+    margin:2%;
+}
+
+.form-busqueda{
+    width: 80%;
+    margin: 2%;
+}
+
+.busqueda{
+    background-color: white;
+    border: 0px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.input-busqueda{
+    border: 0px;
+    width:90%;
+    text-overflow: ellipsis;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.input-busqueda:focus{
+    border: 0px;
+}
+
+
+.lupita{
+    z-index: 1;
+    width: 10%;
+}
+
+.lupita button{
+    border: 0px;
+}
+
+.lupita button i{
+    padding: 2%;
+    
+}
+
+.slogan {
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    vertical-align: middle;
+    margin: 2%;
+}
+
+.burger-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2%;
+}
+
+.burger{
+    color: white;
+    background-color: #03264C;
+    display: flex;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 2%;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+nav{
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    width: 100%;
+    margin: 2%;
+}
+
+nav>div{
+    width: 40%;
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+}
+
+nav ul li{
+    padding: 2%;
+}
+
+.banner {
+    width: 100%;
+}
+
+.descripciones {
+    margin-top: 5%;
+    font-size: 0px;
+    color: gray;
+    opacity: 0%;
+    transition: font-size 0.6s, opacity 0.6s;
+}
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size:12px;
+}
+
+
+
+h2{
+    font-size:24px;
+}
+
+.menu{
+    list-style-type:none;
+}
+
+.img-producto{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.producto{
+    width: 90%;
+    max-width: 300px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 1%;
+    border: solid 1px #ebebeb;
+    padding: 2%;
+    box-sizing: border-box;
+    transition: box-shadow 1s;
+}
+
+
+
+.montos{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.precios{
+    font-size: 18px;
+    font-weight: bold;
+    /*width: 30%;*/
+}
+
+.descuentos {
+    font-size: 14px;
+    color: #39b54a;
+    margin-left: 5%;
+}
+
+footer{
+    background-color: white;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer article{
+    text-align: center;
+    max-width: 500px;
+    margin: 25px auto;
+}
+
+footer article:hover i{
+    color:#EAC926;
+}
+
+footer i{
+    font-size: 2em;
+    color: #1259C3;
+    transition: color 1s;
+}
+
+.iconos-footer{
+    font-size:35px;
+}
+
+.copyright{
+    color: #666;
+}
+
+body{
+    background-color: #ebebeb;
+}
+
+.container-lista{
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.lista-productos{
+    padding: 3%;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+.camionsito{
+    display: table;
+    border-radius: 100%;
+    border:solid 1px #39b54a;
+    color:#39b54a;
+    padding: 2%;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    transition: transform 1s;
+}
+
+.producto:hover .camionsito{
+    transform: rotatez(360deg);
+}
+
+.producto:hover .descripciones {
+    font-size: 16px;
+    opacity: 100%;
+}
+
+@media (min-width: 361px) {
+    
+
+    header{
+        flex-direction: row;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .producto:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .lista-productos{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .lista-productos article{
+        width: 48%;
+    }
+
+    .slogan {
+        width: 28%;
+    }
+
+    .logo {
+        width: 28%;
+    }
+
+    .form-busqueda {
+        width: 28%;
+    }
+    
+}
+
+@media (min-width: 769px) {
+    .lista-productos article {
+            width: 23%;
+    }
+
+    footer section{
+        flex-direction: row;
+    }
+    
+    footer section article{
+        width: 30%;
+    }
+
+    .copyright{
+        text-align: center;
+    }
+}
+
+.container-register form{
+    width: 90%;
+    max-width: 769px;
+    margin: 4% auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-register h2{
+    margin: 4% auto;
+}
+
+.input-title{
+    width: 100%;
+    font-size: large;
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+.input-classic{
+    width: 100%;
+    font-size: large;
+    margin-top: 1%;
+    border-radius: 5px;
+    border: white 0px; 
+    padding: 1%;
+
+}
+
+.button-send {
+    color: white;
+    background-color: #1259C3;
+    border-radius: 5px;
+    margin-top: 4%;
+    width: 100%;
+    max-width: 361px;
+    font-size: large;
+    border-radius: 5px;
+    border: white 0px;
+    padding: 1%;
+}
+
+.button-send:hover{
+    background-color: #0022AA;
+}
+
+.button-reset {
+    color: white;
+    background-color:#666;
+    border-radius: 5px;
+    margin-top: 4%;
+    width: 100%;
+    max-width: 361px;
+    font-size: large;
+    border-radius: 5px;
+    border: white 0px;
+    padding: 1%;
+}
+
+input[type=radio]{
+    margin-top: 2%;
+    width: 15%;
+    font-size: medium;
+}
+
+.user-type-label{
+    margin-top: 2%;
+    width: 35%;
+    font-size: medium;
+}
+
+input[type=checkbox] {
+    margin-top: 2%;
+    width: 15%;
+    font-size: medium;
+}
+
+.interests-label{
+    margin-top: 2%;
+    width: 80%;
+    font-size: medium;
+}
+
