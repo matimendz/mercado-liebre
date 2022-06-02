@@ -216,7 +216,7 @@ footer section{
 footer article{
     text-align: center;
     max-width: 500px;
-    margin: 10px auto;
+    margin: 20px;
 }
 
 footer article:hover i{
@@ -231,6 +231,7 @@ footer i{
 
 .iconos-footer{
     font-size:2em;
+    margin-bottom: 10px;
 }
 
 .copyright{
